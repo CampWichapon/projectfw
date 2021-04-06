@@ -1,0 +1,27 @@
+name: flutter_application1
+description: A flutter_application1
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+
+# #docregion dependencies
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  google_fonts: ^1.1.0
+  flutter_svg: ^0.19.3
+  
+# #enddocregion dependencies
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
