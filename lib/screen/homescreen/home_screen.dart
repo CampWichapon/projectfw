@@ -1,20 +1,30 @@
-import 'dart:html';
 import 'package:flutter/material.dart';
-import 'package:flutter_application1/constants.dart';
-import 'package:flutter_application1/screen/homescreen/bloghis1_screen.dart';
-import 'package:flutter_application1/loginscreen/login_screen.dart';
+import 'package:projectfw/constants.dart';
+import 'package:projectfw/screen/homescreen/bloghis1_screen.dart';
+import 'package:projectfw/loginscreen/login_screen.dart';
 
-class Homescreen extends StatefulWidget {
-  @override
-  _Homescreen createState() => _Homescreen();
-}
-
-class _Homescreen extends State<Homescreen> {
+class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Home',
-      theme: ThemeData(primaryColor: kPrimaryColor),
+    return Container();
+  }
+}
+
+class _HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      body: Container(
+        height: size.height,
+        width: size.width,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/light-blue-background-4.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
     );
   }
 }

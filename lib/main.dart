@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application1/screen/homescreen/bloghis1_screen.dart';
+import 'package:projectfw/constants.dart';
+import 'package:projectfw/screen/homescreen/home_screen.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'First Webapp in Flutter',
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primaryColor: kPrimaryColor,
+        ),
         home: Homescreen());
   }
 }

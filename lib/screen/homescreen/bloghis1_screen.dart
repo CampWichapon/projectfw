@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application1/app_theme.dart';
-
-import 'package:flutter_application1/loginscreen/login_screen.dart';
+import 'package:projectfw/app_theme.dart';
+import 'package:projectfw/loginscreen/login_screen.dart';
 
 // ignore: camel_case_types
 class bloghis1 extends StatefulWidget {
