@@ -12,6 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'First Webapp in Flutter',
         debugShowCheckedModeBanner: false,
-        home: bloghis1());
+        home: Homescreen());
   }
 }
