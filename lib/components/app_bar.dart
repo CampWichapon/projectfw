@@ -1,6 +1,5 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'package:projectfw/constants.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -10,7 +9,7 @@ class CustomAppBar extends StatelessWidget {
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(46),
+        borderRadius: BorderRadius.circular(36),
         boxShadow: [
           BoxShadow(
             offset: Offset(0, -2),
@@ -21,16 +20,6 @@ class CustomAppBar extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
-          Image.asset(
-            "assets/images/logo.png",
-            height: 25,
-            alignment: Alignment.topCenter,
-          ),
-          SizedBox(width: 5),
-          Text(
-            "Foodi".toUpperCase(),
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
           Spacer(),
           MenuItem(
             title: "Home",
@@ -69,16 +58,13 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {},
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
-        child: Text(
-          title.toUpperCase(),
-          style: TextStyle(
-            color: Colors.grey.withOpacity(0.3),
-            fontWeight: FontWeight.bold,
-          ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15),
+      child: Text(
+        title.toUpperCase(),
+        style: TextStyle(
+          color: kTextcolor.withOpacity(0.3),
+          fontWeight: FontWeight.bold,
         ),
       ),
     );

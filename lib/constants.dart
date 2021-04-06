@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-const kPrimaryColor = Color(0XFF6A62B7);
-const kBackgroundColor = Color(0XFF5E5E5);
+const kPrimaryColor = Color(0xFFFFC200);
+const kTextcolor = Color(0xFF241424);
+const kDarkButton = Color(0xFF372930);
 
 final kHintTextStyle = TextStyle(
   color: Colors.white54,
