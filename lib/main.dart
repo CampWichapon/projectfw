@@ -11,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'First Webapp in Flutter',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primaryColor: kPrimaryColor,
-        ),
-        home: HomeScreen());
+      title: 'Home Webapp in Flutter',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: kPrimaryColor,
+      ),
+      home: HomeScreen(),
+    );
   }
 }

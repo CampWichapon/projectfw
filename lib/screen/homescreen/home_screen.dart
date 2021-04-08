@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:projectfw/components/app_bar.dart';
+import 'package:projectfw/components/body_home_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    //Size size = MediaQuery.of(context).size;
     return Container(
-      height: size.height,
-      width: size.width,
+      //height: size.height,
+      //width: size.width,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/images/light-blue-background-4.jpg"),
@@ -15,22 +16,10 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           CustomAppBar(),
-          Container(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "Hi campper",
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline2
-                      .copyWith(color: Colors.black),
-                ),
-              ],
-            ),
-          )
+          Body(),
         ],
       ),
     );
