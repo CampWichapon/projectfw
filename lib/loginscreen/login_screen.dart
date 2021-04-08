@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:projectfw/constants.dart';
 import 'package:projectfw/screen/homescreen/home_screen.dart';
 import 'package:projectfw/app_theme.dart';
+import 'package:projectfw/loginscreen/forgotpassscreen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -90,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          shadowColor: Colors.green,
+          shadowColor: Colors.black12,
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.home),
@@ -162,7 +163,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => HomeScreen(),
+                                  builder: (context) => Forgotpass(),
                                 ),
                               );
                             },
