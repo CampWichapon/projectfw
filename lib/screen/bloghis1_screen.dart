@@ -96,7 +96,7 @@ class _bloghis1 extends State<bloghis1> {
       ),
     );
     return MaterialApp(
-        title: 'First Webapp in Flutter',
+        title: 'Blog',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primaryColor: AppTheme.dark_grey,
@@ -104,7 +104,7 @@ class _bloghis1 extends State<bloghis1> {
         home: Scaffold(
           appBar: AppBar(
             shadowColor: Colors.green,
-            title: Text('First Webapp in Flutter'),
+            title: Text('Programmer in Computer Engineer'),
             actions: <Widget>[
               IconButton(
                 icon: const Icon(Icons.vpn_key),
