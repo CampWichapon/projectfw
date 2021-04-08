@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projectfw/loginscreen/login_screen.dart';
 import 'package:projectfw/screen/bloghis1_screen.dart';
 import 'package:projectfw/screen/homescreen/home_screen.dart';
+import 'package:projectfw/screen/contact_screen.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -43,7 +44,10 @@ class CustomAppBar extends StatelessWidget {
           ),
           MenuItem(
             title: "Contact",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => ContactMe()));
+            },
           ),
           MenuItem(
             title: "Login",

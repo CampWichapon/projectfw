@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:projectfw/constants.dart';
 import 'package:projectfw/screen/homescreen/home_screen.dart';
 import 'package:projectfw/app_theme.dart';
-import 'package:projectfw/loginscreen/forgotpassscreen.dart';
+import 'package:projectfw/loginscreen/forgotpass_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: TextField(
             keyboardType: TextInputType.emailAddress,
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontFamily: 'OpenSans',
             ),
             decoration: InputDecoration(
@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: TextField(
             obscureText: true,
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontFamily: 'OpenSans',
             ),
             decoration: InputDecoration(
@@ -167,7 +167,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                               );
                             },
-                            child: Text('Forgot password ?'),
+                            child: Text(
+                              'Forgot password ?',
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
                         ),
                       ],
