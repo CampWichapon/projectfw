@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:projectfw/constants.dart';
 import 'package:projectfw/screen/homescreen/home_screen.dart';
+import 'package:projectfw/app_theme.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -84,6 +85,9 @@ class _LoginScreenState extends State<LoginScreen> {
     return MaterialApp(
       title: 'Login',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: AppTheme.dark_grey,
+      ),
       home: Scaffold(
         appBar: AppBar(
           shadowColor: Colors.green,

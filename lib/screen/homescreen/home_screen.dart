@@ -9,12 +9,13 @@ class HomeScreen extends StatelessWidget {
     return Container(
       //height: size.height,
       //width: size.width,
-      decoration: BoxDecoration(
+      /*decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/images/light-blue-background-4.jpg"),
           fit: BoxFit.cover,
         ),
-      ),
+      ),*/
+      color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[

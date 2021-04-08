@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:projectfw/constants.dart';
 import 'package:projectfw/loginscreen/login_screen.dart';
-import 'package:projectfw/screen/homescreen/bloghis1_screen.dart';
+import 'package:projectfw/screen/bloghis1_screen.dart';
 import 'package:projectfw/screen/homescreen/home_screen.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -11,7 +10,7 @@ class CustomAppBar extends StatelessWidget {
       margin: EdgeInsets.all(20),
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.lightBlue[100],
         borderRadius: BorderRadius.circular(44),
         boxShadow: [
           BoxShadow(
@@ -71,16 +70,15 @@ class MenuItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: Colors.lightBlue[100],
       child: InkWell(
-        splashColor: Colors.white,
         onTap: press,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Text(
             title.toUpperCase(),
             style: TextStyle(
-              color: kTextcolor.withOpacity(0.3),
+              color: Colors.black,
               fontWeight: FontWeight.bold,
               fontSize: 18,
             ),
