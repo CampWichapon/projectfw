@@ -125,13 +125,13 @@ class _bloghis1 extends State<bloghis1> {
           ),
           body: ListView(
             children: [
-              titleSection,
               Image.asset(
                 'assets/images/se.jpg',
                 width: 600,
                 height: 400,
                 fit: BoxFit.contain,
               ),
+              titleSection,
               textSection,
               buttonSection,
               foundme,

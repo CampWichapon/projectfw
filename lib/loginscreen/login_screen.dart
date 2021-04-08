@@ -93,12 +93,13 @@ class _LoginScreenState extends State<LoginScreen> {
           shadowColor: Colors.green,
           actions: <Widget>[
             IconButton(
-                icon: const Icon(Icons.home),
-                tooltip: 'Home',
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()));
-                })
+              icon: const Icon(Icons.home),
+              tooltip: 'Home',
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()));
+              },
+            )
           ],
         ),
         body: AnnotatedRegion<SystemUiOverlayStyle>(
@@ -149,7 +150,25 @@ class _LoginScreenState extends State<LoginScreen> {
                           height: 30.0,
                         ),
                         _buildEmailTF(),
+                        SizedBox(
+                          height: 30.0,
+                        ),
                         _buildPasswordTF(),
+                        Container(
+                          alignment: Alignment.bottomRight,
+                          padding: EdgeInsets.only(top: 16),
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => HomeScreen(),
+                                ),
+                              );
+                            },
+                            child: Text('Forgot password ?'),
+                          ),
+                        ),
                       ],
                     ),
                   ),

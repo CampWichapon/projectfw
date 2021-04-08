@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Body extends StatelessWidget {
+class Bodyhomescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +17,8 @@ class Body extends StatelessWidget {
             ),
           ),
           Text(
-            'Hi,I\'m camp. \nI am student in thai-nichi instute of teachnology. \nNow, I working frontware international',
+            'Hi,I\'m camp. \nI am student in thai-nichi instute of teachnology. \nNow, I working frontware international'
+            '\nFirst, In this Website is ',
             style: TextStyle(
               fontSize: 19,
               fontWeight: FontWeight.bold,
