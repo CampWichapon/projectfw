@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:projectfw/constants.dart';
+import 'package:projectfw/loginscreen/login_screen.dart';
+import 'package:projectfw/screen/homescreen/bloghis1_screen.dart';
+import 'package:projectfw/screen/homescreen/home_screen.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -9,7 +12,7 @@ class CustomAppBar extends StatelessWidget {
       padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(36),
+        borderRadius: BorderRadius.circular(44),
         boxShadow: [
           BoxShadow(
             offset: Offset(0, -2),
@@ -23,15 +26,21 @@ class CustomAppBar extends StatelessWidget {
           Spacer(),
           MenuItem(
             title: "Home",
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()));
+            },
+          ),
+          MenuItem(
+            title: "About",
             press: () {},
           ),
           MenuItem(
-            title: "about",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Pricing",
-            press: () {},
+            title: "Blog",
+            press: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => bloghis1()));
+            },
           ),
           MenuItem(
             title: "Contact",
@@ -39,7 +48,10 @@ class CustomAppBar extends StatelessWidget {
           ),
           MenuItem(
             title: "Login",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => LoginScreen()));
+            },
           ),
         ],
       ),
@@ -58,13 +70,21 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
-      child: Text(
-        title.toUpperCase(),
-        style: TextStyle(
-          color: kTextcolor.withOpacity(0.3),
-          fontWeight: FontWeight.bold,
+    return Material(
+      color: Colors.white,
+      child: InkWell(
+        splashColor: Colors.white,
+        onTap: press,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Text(
+            title.toUpperCase(),
+            style: TextStyle(
+              color: kTextcolor.withOpacity(0.3),
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
         ),
       ),
     );

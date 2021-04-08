@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projectfw/constants.dart';
 import 'package:projectfw/screen/homescreen/home_screen.dart';
-import 'package:projectfw/screen/homescreen/bloghis1_screen.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -17,6 +16,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primaryColor: kPrimaryColor,
         ),
-        home: bloghis1());
+        home: HomeScreen());
   }
 }

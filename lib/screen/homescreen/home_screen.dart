@@ -15,7 +15,23 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       child: Column(
-        children: <Widget>[CustomAppBar()],
+        children: <Widget>[
+          CustomAppBar(),
+          Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Hi campper",
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline2
+                      .copyWith(color: Colors.black),
+                ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }

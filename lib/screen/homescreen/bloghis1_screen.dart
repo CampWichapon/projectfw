@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projectfw/app_theme.dart';
 import 'package:projectfw/loginscreen/login_screen.dart';
+import 'package:projectfw/screen/homescreen/home_screen.dart';
 
 // ignore: camel_case_types
 class bloghis1 extends StatefulWidget {
@@ -106,14 +107,20 @@ class _bloghis1 extends State<bloghis1> {
             title: Text('First Webapp in Flutter'),
             actions: <Widget>[
               IconButton(
-                icon: const Icon(Icons.navigate_next),
+                icon: const Icon(Icons.vpn_key),
                 tooltip: 'Login',
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => LoginScreen()));
                 },
               ),
-              IconButton(icon: const Icon(Icons.home), onPressed: () {})
+              IconButton(
+                  icon: const Icon(Icons.home),
+                  tooltip: 'Home',
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                  })
             ],
           ),
           body: ListView(
