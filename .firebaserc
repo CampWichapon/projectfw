@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ivory-sentry-166709"
+  },
+  "targets": {
+    "ivory-sentry-166709": {
+      "hosting": {
+        "flutter-weladee": [
+          "flutter-weladee"
+        ]
+      }
+    }
+  }
+}
