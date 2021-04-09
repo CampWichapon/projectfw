@@ -2,10 +2,11 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 
-class Profile extends StatelessWidget{
+class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(extendBodyBehindAppBar: true,
-    )
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+    );
   }
 }
