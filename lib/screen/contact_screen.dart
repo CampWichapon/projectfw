@@ -12,6 +12,7 @@ class ContactMe extends StatelessWidget {
       child: Column(
         children: <Widget>[
           CustomAppBar(),
+          
         ],
       ),
     );
